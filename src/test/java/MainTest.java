@@ -41,7 +41,7 @@ public class MainTest {
     public void testLampAccessModifiers() throws NoSuchFieldException {
         Field styleField = lamp.getClass().getDeclaredField("style");
         Field batteryField = lamp.getClass().getDeclaredField("battery");
-        Field globalRatingField = lamp.getClass().getDeclaredField("globRating");
+        Field globalRatingField = lamp.getClass().getDeclaredField("globalRating");
 
         assertEquals(styleField.getModifiers(), 2);
         assertEquals(batteryField.getModifiers(), 2);
